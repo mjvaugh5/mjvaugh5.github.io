@@ -16,18 +16,22 @@
             <ul>
                 <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#awards"><i class="fas fa-trophy"></i> Awards</a></li>
                 <li><a href="#research"><i class="fas fa-microscope"></i> Research</a></li>
-                <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+                <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
                 <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Home Section -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="profile-container">
-                <img src="images/profile.png" alt="Malachi Vaughn" class="profile-img">
+                <div class="profile-wrapper">
+                    <img src="images/profile.png" alt="Malachi Vaughn" class="profile-img">
+                    <div class="profile-backdrop"></div>
+                </div>
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/malachi-vaughn/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="mailto:malachi.vaughn@protonmail.com"><i class="fas fa-envelope"></i></a>
@@ -36,76 +40,175 @@
             </div>
             <div class="hero-text">
                 <h1>Malachi Vaughn</h1>
-                <p class="subtitle">Computational Mathematical Sciences Student</p>
+                <p class="subtitle">Computational Mathematical Sciences</p>
                 <p class="tagline">Exploring the intersection of mathematics, computation, and real-world applications</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">3.95</span>
+                        <span class="stat-label">GPA</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">331</span>
+                        <span class="stat-label">GRE Score</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1540</span>
+                        <span class="stat-label">SAT Score</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="card-container">
-        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-        <div class="education-card">
-            <div class="edu-header">
-                <h3>B.Sc., Barrett, The Honors College</h3>
-                <span class="year">2021 - 2025</span>
+    <section id="education" class="card-container diagonal-section">
+        <div class="section-content">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="education-card">
+                <div class="edu-header">
+                    <h3>B.Sc., Barrett, The Honors College</h3>
+                    <span class="year">2021 - 2025</span>
+                </div>
+                <p class="institution">Arizona State University</p>
+                <p class="major">Computational Mathematical Sciences</p>
+                <div class="achievements">
+                    <span class="gpa">GPA: 3.95</span>
+                    <span class="honors">Honors Thesis: Modeling Disease Transmission via Transit Networks</span>
+                </div>
             </div>
-            <p class="institution">Arizona State University</p>
-            <p class="major">Computational Mathematical Sciences</p>
-            <div class="achievements">
-                <span class="gpa">GPA: 3.95</span>
-                <span class="honors">Honors Thesis: Modeling Disease Transmission via Transit Networks</span>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="card-container reverse-diagonal">
+        <div class="section-content">
+            <h2><i class="fas fa-trophy"></i> Awards & Honors</h2>
+            <div class="awards-grid">
+                <div class="award-card">
+                    <div class="award-icon"><i class="fas fa-medal"></i></div>
+                    <h3>Garcia Family Foundation Scholar</h3>
+                    <p>Barrett, the Honors College at ASU</p>
+                    <span class="year">2021-2025</span>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon"><i class="fas fa-award"></i></div>
+                    <h3>Wood Foundation Scholar</h3>
+                    <p>Homa and Irene Wood Foundation</p>
+                    <span class="year">2021-2025</span>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Barrett Global Explorer Grant</h3>
+                    <p>For thesis research abroad</p>
+                    <span class="year">2024</span>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon"><i class="fas fa-star"></i></div>
+                    <h3>National Merit Scholar</h3>
+                    <p>National Merit Scholarship Corporation</p>
+                    <span class="year">2021</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Research Section -->
-    <section id="research" class="card-container">
-        <h2><i class="fas fa-microscope"></i> Research Experience</h2>
-        <div class="research-grid">
-            <div class="research-card">
-                <h3>Disease Transmission Networks</h3>
-                <p>A Study of London, Buenos Aires, and Phoenix</p>
-                <div class="tags">
-                    <span>Network Analysis</span>
-                    <span>Epidemiology</span>
-                    <span>Urban Systems</span>
+    <section id="research" class="card-container diagonal-section">
+        <div class="section-content">
+            <h2><i class="fas fa-microscope"></i> Research Experience</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3>Disease Transmission Networks</h3>
+                    <p>A Study of London, Buenos Aires, and Phoenix</p>
+                    <div class="tags">
+                        <span>Network Analysis</span>
+                        <span>Epidemiology</span>
+                        <span>Urban Systems</span>
+                    </div>
+                </div>
+                <div class="research-card">
+                    <h3>Tuberculosis & HIV Syndemic</h3>
+                    <p>Mathematical analysis of disease interaction</p>
+                    <div class="tags">
+                        <span>Mathematical Modeling</span>
+                        <span>Public Health</span>
+                        <span>Data Analysis</span>
+                    </div>
                 </div>
             </div>
-            <div class="research-card">
-                <h3>Tuberculosis & HIV Syndemic</h3>
-                <p>Mathematical analysis of disease interaction</p>
-                <div class="tags">
-                    <span>Mathematical Modeling</span>
-                    <span>Public Health</span>
-                    <span>Data Analysis</span>
+            <div class="conferences">
+                <h3>Conference Presentations</h3>
+                <div class="conference-list">
+                    <div class="conference-item">
+                        <span class="conference-date">Jan 2024</span>
+                        <span class="conference-name">Joint Mathematics Meeting (JMM) 2024</span>
+                        <span class="conference-location">San Francisco, California</span>
+                    </div>
+                    <div class="conference-item">
+                        <span class="conference-date">Oct 2023</span>
+                        <span class="conference-name">SACNAS National Diversity in STEM Conference</span>
+                        <span class="conference-location">Portland, Oregon</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="card-container">
-        <h2><i class="fas fa-code"></i> Personal Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <div class="project-content">
-                    <h3>AI-Based Personal Clone</h3>
-                    <p>Web Application Using 83,000-Word Memory Log</p>
-                    <div class="tags">
-                        <span>AI</span>
-                        <span>Web Dev</span>
-                        <span>NLP</span>
+    <!-- Skills Section -->
+    <section id="skills" class="card-container reverse-diagonal">
+        <div class="section-content">
+            <h2><i class="fas fa-code"></i> Skills & Expertise</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">English</span>
+                            <span class="skill-level">Native</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Mandarin Chinese</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">German</span>
+                            <span class="skill-level">Beginner</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Spanish</span>
+                            <span class="skill-level">Beginner</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="project-card">
-                <div class="project-content">
-                    <h3>MATLAB Sudoku Solver</h3>
-                    <p>Algorithm Design & Implementation</p>
-                    <div class="tags">
-                        <span>MATLAB</span>
-                        <span>Algorithms</span>
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">Octave</span>
+                        <span class="skill-tag">Jupyter</span>
+                        <span class="skill-tag">Bash</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Python Packages</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">MatPlotLib</span>
+                        <span class="skill-tag">SciPy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">GeoPandas</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Other Software</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Sol Supercomputer</span>
+                        <span class="skill-tag">LaTeX</span>
+                        <span class="skill-tag">ChatGPT API</span>
+                        <span class="skill-tag">SPSS</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Blender</span>
                     </div>
                 </div>
             </div>
@@ -113,21 +216,33 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2><i class="fas fa-envelope"></i> Get in Touch</h2>
-        <div class="contact-container">
-            <form class="contact-form">
-                <div class="form-group">
-                    <input type="text" placeholder="Your Name" required>
+    <section id="contact" class="contact-section diagonal-section">
+        <div class="section-content">
+            <h2><i class="fas fa-envelope"></i> Get in Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:malachi.vaughn@protonmail.com">malachi.vaughn@protonmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/malachi-vaughn/" target="_blank">LinkedIn Profile</a>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -138,6 +253,9 @@
                 <a href="https://www.linkedin.com/in/malachi-vaughn/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="mailto:malachi.vaughn@protonmail.com"><i class="fas fa-envelope"></i></a>
                 <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="societies">
+                <span>Member of: SIAM • SACNAS • MAA</span>
             </div>
             <p>&copy; 2023 Malachi Vaughn. All rights reserved.</p>
         </div>
