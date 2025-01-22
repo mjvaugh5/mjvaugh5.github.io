@@ -5,95 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malachi Vaughn - Personal Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <header>
         <nav>
+            <div class="logo">MV</div>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#projects">Personal Projects</a></li>
-                <li><a href="#documents">Documents</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#links">Links</a></li>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#research"><i class="fas fa-microscope"></i> Research</a></li>
+                <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Home Section -->
-    <section id="home">
-        <h1>Malachi Vaughn</h1>
-        <img src="images/profile.png" alt="Malachi Vaughn">
-        <p>Welcome to my personal portfolio. I am a Computational Mathematical Sciences student at Barrett, the Honors College.</p>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-container">
+                <img src="images/profile.png" alt="Malachi Vaughn" class="profile-img">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/malachi-vaughn/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:malachi.vaughn@protonmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="hero-text">
+                <h1>Malachi Vaughn</h1>
+                <p class="subtitle">Computational Mathematical Sciences Student</p>
+                <p class="tagline">Exploring the intersection of mathematics, computation, and real-world applications</p>
+            </div>
+        </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <p>B.Sc., Barrett, The Honors College at Arizona State University</p>
-        <p>Computational Mathematical Sciences</p>
-        <p>GPA: 3.95</p>
-        <p>Honors Thesis: Modeling Disease Transmission via Transit Networks</p>
+    <section id="education" class="card-container">
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+        <div class="education-card">
+            <div class="edu-header">
+                <h3>B.Sc., Barrett, The Honors College</h3>
+                <span class="year">2021 - 2025</span>
+            </div>
+            <p class="institution">Arizona State University</p>
+            <p class="major">Computational Mathematical Sciences</p>
+            <div class="achievements">
+                <span class="gpa">GPA: 3.95</span>
+                <span class="honors">Honors Thesis: Modeling Disease Transmission via Transit Networks</span>
+            </div>
+        </div>
     </section>
 
     <!-- Research Section -->
-    <section id="research">
-        <h2>Research Experience</h2>
-        <ul>
-            <li>Modeling Disease Transmission via Transit Networks: A Study of London, Buenos Aires, and Phoenix</li>
-            <li>Mathematical analysis of the tuberculosis and Human Immunodeficiency Virus syndemic</li>
-        </ul>
+    <section id="research" class="card-container">
+        <h2><i class="fas fa-microscope"></i> Research Experience</h2>
+        <div class="research-grid">
+            <div class="research-card">
+                <h3>Disease Transmission Networks</h3>
+                <p>A Study of London, Buenos Aires, and Phoenix</p>
+                <div class="tags">
+                    <span>Network Analysis</span>
+                    <span>Epidemiology</span>
+                    <span>Urban Systems</span>
+                </div>
+            </div>
+            <div class="research-card">
+                <h3>Tuberculosis & HIV Syndemic</h3>
+                <p>Mathematical analysis of disease interaction</p>
+                <div class="tags">
+                    <span>Mathematical Modeling</span>
+                    <span>Public Health</span>
+                    <span>Data Analysis</span>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Personal Projects Section -->
-    <section id="projects">
-        <h2>Personal Projects</h2>
-        <ul>
-            <li>Developing an AI-Based Personal Clone: A Web Application Using a 83,000-Word Memory Log</li>
-            <li>Statistical Analysis: Education Level vs. Social Support Levels</li>
-            <li>Mathematical Modeling of Malaria</li>
-            <li>Developing a Sudoku Solver in MATLAB</li>
-        </ul>
-    </section>
-
-    <!-- Documents Section -->
-    <section id="documents">
-        <h2>Documents</h2>
-        <p>Links to documents...</p>
-    </section>
-
-    <!-- Hobbies Section -->
-    <section id="hobbies">
-        <h2>Hobbies & Misc</h2>
-        <p>Details about hobbies...</p>
+    <!-- Projects Section -->
+    <section id="projects" class="card-container">
+        <h2><i class="fas fa-code"></i> Personal Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>AI-Based Personal Clone</h3>
+                    <p>Web Application Using 83,000-Word Memory Log</p>
+                    <div class="tags">
+                        <span>AI</span>
+                        <span>Web Dev</span>
+                        <span>NLP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>MATLAB Sudoku Solver</h3>
+                    <p>Algorithm Design & Implementation</p>
+                    <div class="tags">
+                        <span>MATLAB</span>
+                        <span>Algorithms</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <!-- Links Section -->
-    <section id="links">
-        <h2>Links</h2>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/malachi-vaughn/">LinkedIn</a></li>
-            <li><a href="mailto:malachi.vaughn@protonmail.com">Email</a></li>
-        </ul>
+    <section id="contact" class="contact-section">
+        <h2><i class="fas fa-envelope"></i> Get in Touch</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Malachi Vaughn. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/malachi-vaughn/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:malachi.vaughn@protonmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy; 2023 Malachi Vaughn. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
