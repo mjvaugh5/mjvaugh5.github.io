@@ -197,28 +197,28 @@ nav ul li a:hover {
 
 .stat {
     text-align: center;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition);
-}
-
-.stat:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
+    padding: 0 1rem;
 }
 
 .stat-number {
     display: block;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--primary-color);
+    margin-bottom: 0.25rem;
 }
 
 .stat-label {
+    display: block;
     font-size: 0.9rem;
-    color: #666;
+    color: var(--text-color);
+    opacity: 0.8;
+    line-height: 1.2;
+}
+
+.stat:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
 }
 
 /* Awards Grid */
